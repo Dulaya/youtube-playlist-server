@@ -28,6 +28,10 @@ app.use(bodyParser.urlencoded({ limit: '5MB', extended: true }))
 
 app.use(cors());
 
+app.get('/', (req, res) => {
+    res.send('Hello to API');
+});
+
 //Route Middlewares
 app.use('/api/user', authRoute);
 app.use('/api/posts', postRoute);
