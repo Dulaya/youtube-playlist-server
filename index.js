@@ -33,5 +33,5 @@ app.use('/api/user', authRoute);
 app.use('/api/posts', postRoute);
 app.use('/api/deleteaccount', deleteAccountRoute);
 
-app.listen(5000, () => console.log('Server is running'));
+app.listen(provess.env.PORT || 5000, () => console.log('Server is running'));
 
